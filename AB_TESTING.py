@@ -43,8 +43,8 @@ pd.set_option('display.expand_frame_repr', False)
 pd.set_option('display.float_format', lambda x: '%.5f' % x)
 
 # Step 1: Read the control and test datasets
-df_control = pd.read_excel("/Users/beyzacanakci/Desktop/miuul/ABTesti/ab_testing.xlsx", sheet_name="Control Group")
-df_test = pd.read_excel("/Users/beyzacanakci/Desktop/miuul/ABTesti/ab_testing.xlsx", sheet_name="Test Group")
+df_control = pd.read_excel("Dataset/ab_testing.xlsx", sheet_name="Control Group")
+df_test = pd.read_excel("Dataset/ab_testing.xlsx", sheet_name="Test Group")
 
 # Step 2: Data inspection function
 def check_df(dataframe, head=5):
@@ -185,5 +185,6 @@ plt.show()
 #Appropriate statistical test → Independent T-test.
 
 #Analysis of the results → P-Value, Effect you, confidence interval, visualization.
+
 
 #Make your job decision → If the new method has not made a significant difference, continue to the current method.
